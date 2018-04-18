@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>퇴직 계산기</title>
+</head>
+<body>
+<script>
+
+  var age = parseInt(prompt('What is tour current age?'));
+  var retireAge = parseInt(prompt('At what age would you like to retire?'));
+  var year = new Date().getFullYear();
+  var retireYear = year + (retireAge - age);
+
+  document.write('You have ' + (retireAge - age) + ' years left until you can retire. <br/>');
+  document.write('It\'s ' + year + ', so you can retire in ' + retireYear);
+</script>
+</body>
+</html>

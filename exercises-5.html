@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>간단한 수학</title>
+</head>
+<body>
+<script>
+
+  var first = parseInt(prompt('What is the first number?'));
+  while ( isNaN(first) || first < 0 ) {
+    
+    if ( first < 0 ) { 
+      first = parseInt(prompt('Input natural number'));
+    } else {
+      firts = parseInt(prompt('Input number'));
+    }
+
+  } 
+
+  var second = parseInt(prompt('What is the second number?'));
+  while ( isNaN(second) || second < 0 ) {
+    
+    if ( second < 0 ) { 
+      second = parseInt(prompt('Input natural number'));
+    } else {
+      second = parseInt(prompt('Input number'));
+    }
+
+  } 
+
+ var result = '';
+
+  function add (first, second) {
+    return first + second;
+  }
+
+  function minus (first, second) {
+    return first - second;
+  }
+  
+  function multiple (first, second) {
+    return first * second;
+  }
+
+  function division (first, second) {
+    return first / second;
+  }
+
+  result += first + ' + ' + second + ' = ' + add(first, second) + '<br/>';
+  result += first + ' - ' + second + ' = ' + minus(first, second) + '<br/>';
+  result += first + ' * ' + second + ' = ' + multiple(first, second) + '<br/>';
+  result += first + ' / ' + second + ' = ' + division(first, second) + '<br/>';
+  
+  document.write(result);
+</script>
+</body>
+</html>
