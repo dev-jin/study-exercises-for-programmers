@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>피자파티</title>
+</head>
+<body>
+<script>
+
+  var people = parseInt(prompt('How many people?'));
+  var pizzas = parseInt(prompt('How many pizzas do you hove?'));
+  var pices = parseInt(prompt('How many pieces are in a pizza?'));
+
+  var text = '1명당 ' + Math.trunc((pices * pizzas / people)) + '조각씩 먹으면 '
+  text += '남은 피자는' + ((pices * pizzas) % people) + '조각 입니다.';
+  document.write(text);
+  
+</script>
+</body>
+</html>
