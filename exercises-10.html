@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>섹프계산대</title>
+</head>
+<body>
+<script>
+
+  var price1 = parseInt(prompt('첫번째 상품의 가격'));
+  var quantity1 = parseInt(prompt('첫번째 상품의 갯수'));
+  var price2 = parseInt(prompt('두번째 상품의 가격'));
+  var quantity2 = parseInt(prompt('두번째 상품의 갯수'));
+  var price3 = parseInt(prompt('세번째 상품의 가격'));
+  var quantity3 = parseInt(prompt('세번째 상품의 갯수'));
+
+  var sum = (price1 * quantity1) + (price2 * quantity2) + (price3 * quantity3);
+  var tax = Math.round(sum * 0.55);
+  var total = sum + tax;
+
+  var text = '첫번째 아이템 : ' + price1 + '원 x ' + quantity1 + '개<br/>';
+  text += '두번째 아이템 : ' + price2 + '원 x ' + quantity2 + '개<br/>';
+  text += '세번째 아이템 : ' + price3 + '원 x ' + quantity3 + '개<br/>';
+  text += '============================<br/>'
+  text += '합계 : ' + sum + '원</br>';
+  text += '세금 : ' + tax + '원</br>';
+  text += '총 합계 : ' + total + '원</br>';
+  
+  document.write(text);
+  
+</script>
+</body>
+</html>
