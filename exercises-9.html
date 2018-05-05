@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>페인트 계산기</title>
+</head>
+<body>
+<script>
+
+  var length = parseInt(prompt('방의 길이를 입력하세요.'));
+  var width = parseInt(prompt('방의 폭을 입력하세요.'));
+  var area = length * width;
+  
+  var text = '면적 ' + area + '제곱미터를 칠하기 위해서 필요한 페인트는 '
+  text += Math.ceil(area / 9) + '통 입니다.';
+  document.write(text);
+  
+</script>
+</body>
+</html>
