@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>직사각형 방의 면적</title>
+</head>
+<body>  
+
+  <h1>직사각형 방의 면적 구하기</h1>
+  <p>가로 <input id="length" type="text"/> feet</p> 
+  <p>세로 <input id="width" type="text"/> feet</p>
+  <button onClick="submit()">계산</button>
+
+  <script>
+
+    function submit() {
+      var area = roomAreaCaculator();
+      roomAreaPrint(area);
+    }
+
+    function roomAreaCaculator() {
+      var length = document.getElementById('length').value;
+      var width = document.getElementById('width').value; 
+      var area = length * width;
+      
+      return area
+    }
+
+    function feetAreaToMeter(area) {
+      var areaByMeter = Math.pow(area, 2) * 0.9290304;
+
+      return areaByMeter
+    }
+
+    function roomAreaPrint(area) {
+       document.writeln('방의 넓이는 ' + area + 'feet');
+       document.writeln(', ' + feetAreaToMeter(area) + 'meters');
+     }
+  </script>
+
+</body>
+</html>
