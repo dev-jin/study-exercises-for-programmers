@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>환율변환</title>
+</head>
+<body>
+<script>
+
+  var won = parseFloat(prompt('환전하고자 하는 금액을 입력해주세요.'));
+  var rate = parseFloat(prompt('현재 달려환율을 입력해주세요.'));
+  var doller = won * rate / 100
+
+  var text = '현재 환율은' + rate + '입니다.</br>';
+  text += won + '원을 ' + doller.toFixed(2) + '달러로 환전하였습니다.</br>';
+
+  document.write(text);
+  
+</script>
+</body>
+</html>

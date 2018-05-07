@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>복리 계산</title>
+</head>
+<body>
+<script>
+
+  var principal = parseFloat(prompt('보관할 원금을 입력하세요.'));
+  var rate = parseFloat(prompt('연이율을 퍼센트 단위로 입력하세요.')) / 100;
+  var year = parseFloat(prompt('보관할 기간을 입력하세요.'));
+  var n = parseFloat(prompt('연간 이자 지급횟수를 입력하세요.'));
+  var principalAndInterest = principal * Math.pow(1 + (rate / n), n * year)
+  
+  var text = '연이율 ' + rate + '으로 ' + year + '년 예치시 받게되는 금액은 ' + principalAndInterest.toFixed(2) + '원 입니다.</br>';
+
+  document.write(text);
+  
+</script>
+</body>
+</html>
